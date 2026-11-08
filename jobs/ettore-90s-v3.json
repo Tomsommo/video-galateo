@@ -4,7 +4,7 @@
  "rate": "+0%",
  "scenes": [
   {
-   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. Ettore, 80-year-old man, white hair, worn brown overcoat stands at the door of an elegant restaurant at dusk, hat in hand, a waiter looks at him with suspicion.",
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text, no faces visible. an old man in a worn brown overcoat seen from behind, standing at the door of an elegant restaurant at dusk, hat in hand.",
    "seed": 11,
    "text": "Lo cacciarono da un ristorante che portava il suo nome. Si chiamava Ettore, aveva ottant'anni, e quel locale l'aveva fondato lui. Ogni anno, nel giorno dell'anniversario, entrava in incognito, con il suo vecchio cappotto consumato."
   },
@@ -17,7 +17,7 @@
    "text": "Schioccò le dita per chiamare il cameriere. Ettore, con calma, disse soltanto: io non ho fretta."
   },
   {
-   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. young waiter in black vest and white apron, nervous, pouring water from a glass carafe that spills onto a white tablecloth, standing at a restaurant table, an angry man in a navy suit sitting at the table. The waiter is standing, not writing.",
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text, no faces visible. extreme close-up of a waiter's trembling hands holding a glass carafe, water spilling on a white tablecloth.",
    "seed": 21,
    "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua."
   },
@@ -34,7 +34,7 @@
    "text": "Gli investitori si alzarono e uscirono: chi tratta così un cameriere, non tratterà meglio noi. Leonardo rimase solo."
   },
   {
-   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. Matteo, 22-year-old waiter, black vest, white apron and Ettore, 80-year-old man, white hair, worn brown overcoat shaking hands warmly in the empty dining room, soft evening light.",
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text, no faces visible. extreme close-up of two hands shaking, one old and wrinkled, one young, on a white tablecloth, soft evening light.",
    "seed": 13,
    "text": "Matteo chiese a Ettore: perché l'ha fatto? Perché il rispetto si vede quando credi che nessuno conti. Il galateo non è saper usare le posate. È come tratti chi non può risponderti."
   }
