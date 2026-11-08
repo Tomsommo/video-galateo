@@ -1,3 +1,14 @@
-Scarico fallito (HTTP Error 402: Payment Required), tentativo 1/4
-Scarico fallito (HTTP Error 402: Payment Required), tentativo 1/4
-OK out/ettore-90s-v2.mp4 (74.1s)
+Scarico fallito ([Errno 2] No such file or directory: '/tmp/tmpl5cnl9cw/img0.jpg.c.jpg/img1.jpg'), tentativo 1/4
+Scarico fallito ([Errno 2] No such file or directory: '/tmp/tmpl5cnl9cw/img0.jpg.c.jpg/img1.jpg'), tentativo 2/4
+Scarico fallito ([Errno 2] No such file or directory: '/tmp/tmpl5cnl9cw/img0.jpg.c.jpg/img1.jpg'), tentativo 3/4
+Scarico fallito ([Errno 2] No such file or directory: '/tmp/tmpl5cnl9cw/img0.jpg.c.jpg/img1.jpg'), tentativo 4/4
+Traceback (most recent call last):
+  File "/home/runner/work/video-galateo/video-galateo/render.py", line 234, in <module>
+    main()
+  File "/home/runner/work/video-galateo/video-galateo/render.py", line 230, in main
+    render_job(p)
+  File "/home/runner/work/video-galateo/video-galateo/render.py", line 155, in render_job
+    download(src, img)
+  File "/home/runner/work/video-galateo/video-galateo/render.py", line 71, in download
+    raise RuntimeError(f"Impossibile scaricare {url[:80]}: {last}")
+RuntimeError: Impossibile scaricare https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJ: [Errno 2] No such file or directory: '/tmp/tmpl5cnl9cw/img0.jpg.c.jpg/img1.jpg'
