@@ -27,6 +27,7 @@ W, H, FPS = 1080, 1920, 30
 PAD = 0.5          # pausa dopo ogni scena (secondi)
 ZOOM = 0.12        # quanto zoomare (12%)
 MAX_CUE_CHARS = 26
+FALLBACK_VOICE = "it-IT-DiegoNeural"
 
 
 def run(cmd, **kw):
@@ -135,7 +136,11 @@ def render_job(job_path):
             if fake:
                 words = tts_fake(sc["text"], mp3)
             else:
-                words = asyncio.run(tts_edge(sc["text"], voice, rate, mp3))
+                try:
+                    words = asyncio.run(tts_edge(sc["text"], voice, rate, mp3))
+                except Exception as exc:  # voce non disponibile: ripiega su quella di riserva
+                    print(f"Voce {voice} non riuscita ({exc}); uso {FALLBACK_VOICE}")
+                    words = asyncio.run(tts_edge(sc["text"], FALLBACK_VOICE, rate, mp3))
             a_dur = duration(mp3)
             if not words:
                 words = even_words(sc["text"], a_dur)
@@ -155,7 +160,7 @@ def render_job(job_path):
             run(["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-i", mp3,
                  "-filter_complex", f"[0:v]{vf}[v];[1:a]apad=pad_dur={PAD},aresample=44100[a]",
                  "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}",
-                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                  "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", clip])
             clips.append(clip)
             t0 += total
@@ -177,7 +182,7 @@ def render_job(job_path):
                  "OutlineColour=&H00000000,BorderStyle=1,Outline=3,Shadow=0,Alignment=2,MarginV=45")
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", "joined.mp4",
              "-vf", f"subtitles=subs.srt:force_style='{style}'",
-             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-pix_fmt", "yuv420p",
              "-c:a", "copy", "-movflags", "+faststart", os.path.abspath(out_path)],
             cwd=tmp)
     print(f"OK {out_path} ({duration(out_path):.1f}s)")
