@@ -1,0 +1,42 @@
+{
+ "name": "ettore-90s-v2",
+ "voice": "it-IT-GiuseppeMultilingualNeural",
+ "rate": "+0%",
+ "scenes": [
+  {
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. Ettore, 80-year-old man, white hair, worn brown overcoat stands at the door of an elegant restaurant at dusk, hat in hand, a waiter looks at him with suspicion.",
+   "seed": 11,
+   "text": "Lo cacciarono da un ristorante che portava il suo nome. Si chiamava Ettore, aveva ottant'anni, e quel locale l'aveva fondato lui. Ogni anno, nel giorno dell'anniversario, entrava in incognito, con il suo vecchio cappotto consumato."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Quella sera, al tavolo accanto, sedeva Leonardo, un imprenditore sicuro di sé. Squadrò l'anziano e sussurrò: questo posto non è per lui."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Schioccò le dita per chiamare il cameriere. Ettore, con calma, disse soltanto: io non ho fretta."
+  },
+  {
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. close-up of Matteo, 22-year-old waiter, black vest, white apron, trembling hands, a few drops of water spilled on a white tablecloth, Leonardo, 45-year-old man, navy suit, slicked-back hair watching angrily in the background.",
+   "seed": 12,
+   "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/EPltrX8ohTI08aW7tIAyz/e52VyIY-BwE2pUWz_M9Xh.jpg",
+   "text": "Leonardo scattò in piedi: incompetente! E quel vecchio mendicante lo faccia uscire. La sala cadde nel silenzio."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "Allora il direttore attraversò la sala e si inchinò davanti a Ettore: bentornato, signore."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/IHc02uerq71EFgsP6yF9Z/-m_b2MAiLk5LdwitfsxSP.jpg",
+   "text": "Gli investitori si alzarono e uscirono: chi tratta così un cameriere, non tratterà meglio noi. Leonardo rimase solo."
+  },
+  {
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. Matteo, 22-year-old waiter, black vest, white apron and Ettore, 80-year-old man, white hair, worn brown overcoat shaking hands warmly in the empty dining room, soft evening light.",
+   "seed": 13,
+   "text": "Matteo chiese a Ettore: perché l'ha fatto? Perché il rispetto si vede quando credi che nessuno conti. Il galateo non è saper usare le posate. È come tratti chi non può risponderti."
+  }
+ ]
+}

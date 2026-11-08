@@ -31,13 +31,17 @@ jobs:
           pip install edge-tts
 
       - name: Monta i video mancanti
-        run: python render.py
+        run: |
+          mkdir -p out
+          set -o pipefail
+          python render.py 2>&1 | tee out/render.log
 
-      - name: Salva i video nel repository
+      - name: Salva i video e il registro nel repository
+        if: always()
         run: |
           git config user.name "video-bot"
           git config user.email "video-bot@users.noreply.github.com"
-          git add out/*.mp4
+          git add out/
           if git diff --cached --quiet; then
             echo "Nessun nuovo video."
           else

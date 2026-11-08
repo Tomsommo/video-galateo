@@ -9,7 +9,8 @@ Formato del job:
   "name": "ettore-2026-11-08",
   "voice": "it-IT-DiegoNeural",      (facoltativo)
   "rate": "-5%",                      (facoltativo, velocita' voce)
-  "scenes": [ {"image": "https://...jpg", "text": "testo letto mentre si vede l'immagine"} ]
+  "scenes": [ {"image": "https://...jpg", "text": "testo letto mentre si vede l'immagine"},
+              {"image_prompt": "descrizione in inglese: l'immagine viene creata gratis con Pollinations", "text": "..."} ]
 }
 Variabile d'ambiente FAKE_TTS=1: voce finta (solo per provare il montaggio).
 """
@@ -21,6 +22,8 @@ import os
 import subprocess
 import sys
 import tempfile
+import time
+import urllib.parse
 import urllib.request
 
 W, H, FPS = 1080, 1920, 30
@@ -49,10 +52,29 @@ def srt_time(t):
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
-def download(url, dest):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 video-galateo"})
-    with urllib.request.urlopen(req, timeout=60) as r, open(dest, "wb") as f:
-        f.write(r.read())
+def download(url, dest, tries=4):
+    last = None
+    for n in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 video-galateo"})
+            with urllib.request.urlopen(req, timeout=180) as r:
+                data = r.read()
+            if len(data) < 5000:
+                raise RuntimeError(f"risposta troppo piccola ({len(data)} byte)")
+            with open(dest, "wb") as f:
+                f.write(data)
+            return
+        except Exception as exc:  # riprova dopo una pausa
+            last = exc
+            print(f"Scarico fallito ({exc}), tentativo {n + 1}/{tries}")
+            time.sleep(8)
+    raise RuntimeError(f"Impossibile scaricare {url[:80]}: {last}")
+
+
+def pollinations_url(prompt, seed):
+    q = urllib.parse.quote(prompt)
+    return (f"https://image.pollinations.ai/prompt/{q}"
+            f"?width=1080&height=1920&model=flux&nologo=true&seed={seed}")
 
 
 def even_words(text, total):
@@ -128,7 +150,7 @@ def render_job(job_path):
             img = os.path.join(tmp, f"img{i}.jpg")
             mp3 = os.path.join(tmp, f"a{i}.mp3")
             clip = os.path.join(tmp, f"clip{i}.mp4")
-            src = sc["image"]
+            src = sc.get("image") or pollinations_url(sc["image_prompt"], sc.get("seed", 7 + i))
             if src.startswith("http"):
                 download(src, img)
             else:
