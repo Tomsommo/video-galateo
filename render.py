@@ -153,6 +153,11 @@ def render_job(job_path):
             src = sc.get("image") or pollinations_url(sc["image_prompt"], sc.get("seed", 7 + i))
             if src.startswith("http"):
                 download(src, img)
+                if "pollinations.ai" in src:  # toglie la scritta in basso
+                    tmp = img + ".c.jpg"
+                    run(["ffmpeg", "-y", "-loglevel", "error", "-i", img,
+                         "-vf", "crop=iw:ih*0.92:0:0", tmp])
+                    os.replace(tmp, img)
             else:
                 img = src
             if fake:

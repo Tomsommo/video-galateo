@@ -1,5 +1,5 @@
 {
- "name": "ettore-90s-v2",
+ "name": "ettore-90s-v3",
  "voice": "it-IT-GiuseppeMultilingualNeural",
  "rate": "+0%",
  "scenes": [
@@ -17,8 +17,8 @@
    "text": "Schioccò le dita per chiamare il cameriere. Ettore, con calma, disse soltanto: io non ho fretta."
   },
   {
-   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. close-up of Matteo, 22-year-old waiter, black vest, white apron, trembling hands, a few drops of water spilled on a white tablecloth, Leonardo, 45-year-old man, navy suit, slicked-back hair watching angrily in the background.",
-   "seed": 12,
+   "image_prompt": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text. young waiter in black vest and white apron, nervous, pouring water from a glass carafe that spills onto a white tablecloth, standing at a restaurant table, an angry man in a navy suit sitting at the table. The waiter is standing, not writing.",
+   "seed": 21,
    "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua."
   },
   {
