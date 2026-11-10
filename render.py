@@ -9,6 +9,8 @@ Formato del job:
   "name": "ettore-2026-11-08",
   "voice": "it-IT-DiegoNeural",      (facoltativo)
   "rate": "-5%",                      (facoltativo, velocita' voce)
+  "pad": 0.25,                        (facoltativo, pausa dopo ogni scena)
+  "style": "...",                     (facoltativo, aggiunto davanti a ogni image_prompt)
   "scenes": [ {"image": "https://...jpg", "text": "testo letto mentre si vede l'immagine"},
               {"image_prompt": "descrizione in inglese: l'immagine viene creata gratis con Pollinations", "text": "..."} ]
 }
@@ -52,7 +54,7 @@ def srt_time(t):
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
-def download(url, dest, tries=4):
+def download(url, dest, tries=6):
     last = None
     for n in range(tries):
         try:
@@ -67,7 +69,7 @@ def download(url, dest, tries=4):
         except Exception as exc:  # riprova dopo una pausa
             last = exc
             print(f"Scarico fallito ({exc}), tentativo {n + 1}/{tries}")
-            time.sleep(8)
+            time.sleep(15)
     raise RuntimeError(f"Impossibile scaricare {url[:80]}: {last}")
 
 
@@ -140,6 +142,7 @@ def render_job(job_path):
     name = job["name"]
     voice = job.get("voice", "it-IT-DiegoNeural")
     rate = job.get("rate", "-5%")
+    pad = float(job.get("pad", PAD))
     out_path = os.path.join("out", f"{name}.mp4")
     os.makedirs("out", exist_ok=True)
     fake = os.environ.get("FAKE_TTS") == "1"
@@ -150,7 +153,8 @@ def render_job(job_path):
             img = os.path.join(tmp, f"img{i}.jpg")
             mp3 = os.path.join(tmp, f"a{i}.mp3")
             clip = os.path.join(tmp, f"clip{i}.mp4")
-            src = sc.get("image") or pollinations_url(sc["image_prompt"], sc.get("seed", 7 + i))
+            src = sc.get("image") or pollinations_url(
+                (job.get("style", "") + " " + sc["image_prompt"]).strip(), sc.get("seed", 7 + i))
             if src.startswith("http"):
                 download(src, img)
                 if "pollinations.ai" in src:  # toglie la scritta in basso
@@ -172,7 +176,7 @@ def render_job(job_path):
             if not words:
                 words = even_words(sc["text"], a_dur)
             cues += make_cues(words, t0)
-            total = a_dur + PAD
+            total = a_dur + pad
             frames = max(int(math.ceil(total * FPS)), 1)
             if i % 2 == 0:
                 z = f"1+{ZOOM}*on/{frames}"
@@ -185,7 +189,7 @@ def render_job(job_path):
                 f"format=yuv420p"
             )
             run(["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-i", mp3,
-                 "-filter_complex", f"[0:v]{vf}[v];[1:a]apad=pad_dur={PAD},aresample=44100[a]",
+                 "-filter_complex", f"[0:v]{vf}[v];[1:a]apad=pad_dur={pad},aresample=44100[a]",
                  "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}",
                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
                  "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", clip])

@@ -1,0 +1,139 @@
+{
+ "name": "ettore-90s-v4",
+ "voice": "it-IT-GiuseppeMultilingualNeural",
+ "rate": "+0%",
+ "pad": 0.3,
+ "style": "stylized illustrated comic art, ink outlines, warm flat colors, vintage 1950s Parisian restaurant, warm golden light, vertical composition, no text, no faces visible, faces hidden or out of frame.",
+ "scenes": [
+  {
+   "image_prompt": "an old man in a worn brown overcoat seen from behind, standing at the door of an elegant restaurant at dusk, hat in hand.",
+   "seed": 101,
+   "text": "Lo cacciarono da un ristorante che portava il suo nome."
+  },
+  {
+   "image_prompt": "a brass restaurant sign on a facade reading nothing, ornate frame, evening street lamps, close-up.",
+   "seed": 101,
+   "text": "Si chiamava Ettore, aveva ottant'anni, e quel locale l'aveva fondato lui."
+  },
+  {
+   "image_prompt": "close-up of old wrinkled hands buttoning a worn brown overcoat, frayed cuffs.",
+   "seed": 101,
+   "text": "Ogni anno, nel giorno dell'anniversario, entrava in incognito, con il suo vecchio cappotto consumato."
+  },
+  {
+   "image_prompt": "an old man in a worn brown overcoat seen from behind, sitting alone at a small corner table with a white tablecloth, hat on the chair.",
+   "seed": 101,
+   "text": "Si sedeva sempre allo stesso tavolo, in fondo alla sala."
+  },
+  {
+   "image_prompt": "a man in a sharp navy blue suit with a gold watch seen from behind, sitting at the next table with two businessmen, papers and wine glasses.",
+   "seed": 101,
+   "text": "Quella sera, al tavolo accanto, sedeva Leonardo, un imprenditore sicuro di sé, con i suoi investitori."
+  },
+  {
+   "image_prompt": "over-the-shoulder view from behind a man in a sharp navy blue suit with a gold watch, looking towards the old man in the brown overcoat across the room.",
+   "seed": 101,
+   "text": "Squadrò l'anziano dall'alto in basso."
+  },
+  {
+   "image_prompt": "close-up of a hand with a gold watch covering a mouth, whispering gesture, only lower part of face out of frame, wine glass.",
+   "seed": 101,
+   "text": "E sussurrò: questo posto non è per lui."
+  },
+  {
+   "image_prompt": "close-up of a hand with a gold watch raised, snapping fingers in the air, restaurant background blurred.",
+   "seed": 101,
+   "text": "Schioccò le dita per chiamare il cameriere."
+  },
+  {
+   "image_prompt": "a young waiter in a white jacket seen from behind, hurrying between tables with a carafe, elegant dining room.",
+   "seed": 101,
+   "text": "Arrivò Matteo, il ragazzo più giovane della sala."
+  },
+  {
+   "image_prompt": "close-up of old wrinkled hands resting calmly folded on a white tablecloth, a napkin beside.",
+   "seed": 101,
+   "text": "Ettore, con calma, disse soltanto: io non ho fretta."
+  },
+  {
+   "image_prompt": "extreme close-up of a waiter's trembling hands holding a glass carafe, water spilling on a white tablecloth.",
+   "seed": 101,
+   "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua."
+  },
+  {
+   "image_prompt": "close-up of a few drops of water on a white tablecloth near a crystal glass, dramatic light.",
+   "seed": 101,
+   "text": "Una macchia piccola, quasi invisibile."
+  },
+  {
+   "image_prompt": "a man in a sharp navy blue suit with a gold watch seen from behind, standing up abruptly, chair pushed back, arm pointing.",
+   "seed": 101,
+   "text": "Leonardo scattò in piedi: incompetente!"
+  },
+  {
+   "image_prompt": "low angle from behind a man in a sharp navy blue suit with a gold watch pointing at the old man in the brown overcoat at the corner table.",
+   "seed": 101,
+   "text": "E quel vecchio mendicante lo faccia uscire."
+  },
+  {
+   "image_prompt": "wide view of an elegant dining room, all diners frozen, cutlery suspended, seen from the back of the room, silhouettes only.",
+   "seed": 101,
+   "text": "La sala cadde nel silenzio."
+  },
+  {
+   "image_prompt": "a maitre d' in a black tailcoat seen from behind, walking slowly across the dining room towards the corner table.",
+   "seed": 101,
+   "text": "Allora il direttore attraversò la sala."
+  },
+  {
+   "image_prompt": "a maitre d' in a black tailcoat seen from behind, bowing deeply in front of the old man in the brown overcoat at the corner table.",
+   "seed": 101,
+   "text": "Si inchinò davanti a Ettore: bentornato, signore."
+  },
+  {
+   "image_prompt": "close-up of a framed old black and white photograph on the restaurant wall showing the restaurant opening day, crowd from behind.",
+   "seed": 101,
+   "text": "Nella sala capirono tutti chi era quell'uomo."
+  },
+  {
+   "image_prompt": "two businessmen seen from behind, standing up and putting on their coats, leaving the table, papers left behind.",
+   "seed": 101,
+   "text": "Gli investitori si alzarono, raccolsero i loro fogli e uscirono."
+  },
+  {
+   "image_prompt": "close-up of business papers and a fountain pen abandoned on a restaurant table, empty chairs.",
+   "seed": 101,
+   "text": "Chi tratta così un cameriere, non tratterà meglio noi."
+  },
+  {
+   "image_prompt": "a man in a sharp navy blue suit with a gold watch seen from behind, sitting alone at an empty table, shoulders slumped, empty chairs around.",
+   "seed": 101,
+   "text": "Leonardo rimase solo."
+  },
+  {
+   "image_prompt": "a young waiter in a white jacket and an old man in a worn brown overcoat seen from the side, only from the shoulders down, the young waiter leaning to listen.",
+   "seed": 101,
+   "text": "Matteo chiese a Ettore: perché l'ha fatto?"
+  },
+  {
+   "image_prompt": "extreme close-up of two hands shaking, one old and wrinkled, one young, on a white tablecloth, soft evening light.",
+   "seed": 101,
+   "text": "Perché il rispetto si vede quando credi che nessuno conti."
+  },
+  {
+   "image_prompt": "still life of an elegant table setting, silverware perfectly arranged, a single candle, soft light.",
+   "seed": 101,
+   "text": "Il galateo non è saper usare le posate."
+  },
+  {
+   "image_prompt": "an old man in a worn brown overcoat seen from behind, walking out of the restaurant into the evening street, hat on, warm light from the door.",
+   "seed": 101,
+   "text": "È come tratti chi non può risponderti."
+  },
+  {
+   "image_prompt": "a black top hat on a white tablecloth beside a folded napkin, elegant, centered.",
+   "seed": 101,
+   "text": "Segui le regole del gentleman. Ogni sera, una nuova."
+  }
+ ]
+}
