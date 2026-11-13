@@ -127,7 +127,7 @@ def main():
         day = (start + dt.timedelta(days=k)).isoformat()
         out = os.path.join(BASE, day)
         os.makedirs(out, exist_ok=True)
-        slides = [cover(c), intro(c)] + [item(c, i, 3 + i) for i in range(3)] + [final(c, 6)]
+        slides = [cover(c), intro(c)] + [item(c, i, 3 + i) for i in range(len(c["items"]))] + [final(c, 3 + len(c["items"]))]
         for j, s in enumerate(slides, 1):
             s.save(os.path.join(out, f"{j:02d}.jpg"), quality=92)
         caps[day] = {"titolo": f'{c["n"]} {c["t"]}', "slide": len(slides), "didascalia": c["cap"]}

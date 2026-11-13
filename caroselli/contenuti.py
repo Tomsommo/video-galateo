@@ -214,3 +214,13 @@ CAROSELLI = [
   save="Salva il post e scegline uno.", q="Quale proposito scegli?",
   cap="Dicembre è il mese dei bilanci e dei propositi.\nUn grazie al giorno, un pasto senza schermi, un libro al mese.\nL'eleganza si allena, come tutto.\nSalva il post e scegline uno.\nQuale scegli? Bonne soirée, signori."),
 ]
+
+LANCIO = dict(n="4", t="pilastri da tenere sul comodino", sub="Le regole del gentleman, ora anche su carta",
+  big="Il libro è uscito anche in versione cartacea.", it="Dentro, quattro pilastri.",
+  items=[("A tavola", "Posate, brindisi, conto: tutto quello che si nota senza che nessuno lo dica."),
+         ("Lo stile", "Abito, scarpe, cravatta. Un'eleganza che non dipende dal prezzo."),
+         ("Le maniere", "Presentazioni, inviti, telefono, ritardi. Il garbo di tutti i giorni."),
+         ("Il carattere", "Il gentiluomo si riconosce da come tratta chi non può ricambiare.")],
+  save="Un regalo perfetto per Natale, da sfogliare e sottolineare.", q="A chi lo regaleresti?",
+  cap="È arrivato il momento della carta.\n«Le regole del gentleman» ora è anche un libro da sfogliare, sottolineare, regalare.\nA tavola, lo stile, le maniere, il carattere, e gli episodi veri «Visto ai tavoli».\nCercalo su Amazon: «Le regole del gentleman». Link in bio.\nA chi lo regaleresti? Bonne soirée, signori.")
+CAROSELLI.insert(2, LANCIO)
