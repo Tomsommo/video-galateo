@@ -1,0 +1,185 @@
+{
+ "name": "ettore-90s-v6",
+ "voice": "it-IT-GiuseppeMultilingualNeural",
+ "rate": "-3%",
+ "pad": 0.25,
+ "scenes": [
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Lo cacciarono da un ristorante che portava il suo nome."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Si chiamava Ettore, aveva ottant'anni, e quel locale l'aveva fondato lui.",
+   "crop": [
+    0.5,
+    0.3,
+    0.45
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Ogni anno, nel giorno dell'anniversario, entrava in incognito, con il suo vecchio cappotto consumato.",
+   "crop": [
+    0.0,
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Quella sera, al tavolo accanto, sedeva Leonardo, un imprenditore sicuro di sé.",
+   "crop": [
+    0.0,
+    0.4,
+    0.55
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Squadrò l'anziano e sussurrò: questo posto non è per lui.",
+   "crop": [
+    0.36,
+    0.22,
+    0.45
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Leonardo schioccava le dita, e faceva ripetere il vino al giovane cameriere, Matteo, per tre volte.",
+   "crop": [
+    0.15,
+    0.2,
+    0.5
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Ettore osservava in silenzio."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Aprì il tovagliolo con calma, spezzò il pane con le mani",
+   "crop": [
+    0.0,
+    0.2,
+    0.6
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "e disse a Matteo: con calma, ragazzo. Io non ho fretta.",
+   "crop": [
+    0.45,
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/EPltrX8ohTI08aW7tIAyz/e52VyIY-BwE2pUWz_M9Xh.jpg",
+   "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua.",
+   "crop": [
+    0.1,
+    0.35,
+    0.6
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/EPltrX8ohTI08aW7tIAyz/e52VyIY-BwE2pUWz_M9Xh.jpg",
+   "text": "Leonardo scattò in piedi: incompetente!",
+   "crop": [
+    0.0,
+    0.15,
+    0.6
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/EPltrX8ohTI08aW7tIAyz/e52VyIY-BwE2pUWz_M9Xh.jpg",
+   "text": "E quel vecchio mendicante lo faccia uscire.",
+   "crop": [
+    0.45,
+    0.15,
+    0.5
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/EPltrX8ohTI08aW7tIAyz/e52VyIY-BwE2pUWz_M9Xh.jpg",
+   "text": "La sala cadde nel silenzio."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "Arrivò il direttore. Passò accanto a Leonardo senza guardarlo",
+   "crop": [
+    0.0,
+    0.15,
+    0.5
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "e si inchinò davanti all'anziano: buonasera, signor Ettore.",
+   "crop": [
+    0.05,
+    0.2,
+    0.7
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "Ettore si alzò: il giovane Matteo ha servito meglio di chiunque.",
+   "crop": [
+    0.45,
+    0.2,
+    0.55
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "Da domani è il nuovo capo sala."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/IHc02uerq71EFgsP6yF9Z/-m_b2MAiLk5LdwitfsxSP.jpg",
+   "text": "Gli investitori si alzarono e uscirono: chi tratta così un cameriere, non tratterà meglio noi.",
+   "crop": [
+    0.28,
+    0.12,
+    0.5
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/IHc02uerq71EFgsP6yF9Z/-m_b2MAiLk5LdwitfsxSP.jpg",
+   "text": "Leonardo rimase solo.",
+   "crop": [
+    0.42,
+    0.42,
+    0.58
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Wb1jjYejKfmBeXgnpZCT3/Kfzuc7-gflr-H5nT7YBiB.jpg",
+   "text": "Matteo chiese a Ettore: perché l'ha fatto?",
+   "crop": [
+    0.4,
+    0.0,
+    0.6
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/uAnZaDenslmgEmfvc7kfS/7_l1grfhxwOAlasXMp8Ip.jpg",
+   "text": "Perché il rispetto si vede quando credi che nessuno conti.",
+   "crop": [
+    0.45,
+    0.2,
+    0.55
+   ]
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/Mu84LkLbtVRMOwVlYabhh/fNOJKKkBNPVRrkcWPgyp5.jpg",
+   "text": "Il galateo non è saper usare le posate. È come tratti chi non può risponderti."
+  },
+  {
+   "image": "https://cdn.gamma.app/qnl5fdlcu72u2gr/design-anything/IHc02uerq71EFgsP6yF9Z/-m_b2MAiLk5LdwitfsxSP.jpg",
+   "text": "Segui le regole del gentleman. Ogni sera, una nuova."
+  }
+ ]
+}

@@ -12,6 +12,7 @@ Formato del job:
   "pad": 0.25,                        (facoltativo, pausa dopo ogni scena)
   "style": "...",                     (facoltativo, aggiunto davanti a ogni image_prompt)
   "scenes": [ {"image": "https://...jpg", "text": "testo letto mentre si vede l'immagine"},
+              {"image": "...", "crop": [0.1, 0.2, 0.5], "text": "..."}  (inquadratura: x, y, lato in frazioni),
               {"image_prompt": "descrizione in inglese: l'immagine viene creata gratis con Pollinations", "text": "..."} ]
 }
 Variabile d'ambiente FAKE_TTS=1: voce finta (solo per provare il montaggio).
@@ -164,6 +165,12 @@ def render_job(job_path):
                     os.replace(cr, img)
             else:
                 img = src
+            if sc.get("crop"):  # inquadratura: [x, y, f] in frazioni dell'immagine
+                cx, cy, cf = sc["crop"]
+                cr = os.path.join(tmp, f"crop{i}.jpg")
+                run(["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-vf",
+                     f"crop=iw*{cf}:ih*{cf}:iw*{cx}:ih*{cy},scale={W}:{H}:flags=lanczos", "-q:v", "2", cr])
+                img = cr
             if fake:
                 words = tts_fake(sc["text"], mp3)
             else:

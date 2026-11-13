@@ -1,5 +1,5 @@
 # Progetto video @leregoledelgentleman — stato (10 nov 2026)
-Ripreso il 10 nov. Scelta: solo strumenti gratuiti, scene SENZA VOLTI (mani, dettagli, persone di spalle), personaggi riconoscibili dagli abiti
+13 nov: a Tommaso NON piacciono silhouette e immagini Pollinations; gli piace la PRIMA versione (5 immagini Gamma a fumetti, a colori, volti coerenti). v6 = stesse 5 immagini + inquadrature diverse ("crop": [x,y,lato]) per avere ~23 scene.
 (Ettore cappotto marrone, Leonardo abito blu e orologio d'oro, Matteo giacca bianca, direttore frac nero), stesso stile e stesso seed per tutte le immagini.
 Ritmo: un'immagine ogni 3-4 secondi (~26 scene per 90 s), pausa breve tra scene ("pad").
 Funziona: GitHub Action monta immagini fisse (zoom) + voce edge-tts (it-IT-GiuseppeMultilingualNeural) + sottotitoli -> out/<nome>.mp4.
