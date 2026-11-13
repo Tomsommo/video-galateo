@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "jobs/*.json"
+      - "previews/*.json"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +17,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -28,12 +29,13 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          pip install edge-tts
+          pip install edge-tts pillow
 
       - name: Monta i video mancanti
         run: |
           mkdir -p out
           set -o pipefail
+          python preview.py 2>&1 | tee out/preview.log
           python render.py 2>&1 | tee out/render.log
 
       - name: Salva i video e il registro nel repository
@@ -41,7 +43,7 @@ jobs:
         run: |
           git config user.name "video-bot"
           git config user.email "video-bot@users.noreply.github.com"
-          git add out/
+          git add out/ previews/
           if git diff --cached --quiet; then
             echo "Nessun nuovo video."
           else
