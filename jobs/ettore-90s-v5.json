@@ -1,0 +1,119 @@
+{
+ "name": "ettore-90s-v5",
+ "voice": "it-IT-GiuseppeMultilingualNeural",
+ "rate": "+5%",
+ "pad": 0.2,
+ "style": "cinematic illustration, backlit scene, people only as dark black silhouettes seen from behind against warm golden window light, faces never visible, vintage 1950s Parisian restaurant, amber and brown palette, vertical composition, no text.",
+ "scenes": [
+  {
+   "image_prompt": "the silhouette of an old man in a long overcoat and hat, seen from behind, standing at the open door of an elegant restaurant at dusk.",
+   "seed": 101,
+   "text": "Lo cacciarono da un ristorante che portava il suo nome."
+  },
+  {
+   "image_prompt": "empty elegant restaurant facade at dusk with warm lit windows and street lamps, no people.",
+   "seed": 101,
+   "text": "Si chiamava Ettore, aveva ottant'anni, e quel locale l'aveva fondato lui."
+  },
+  {
+   "image_prompt": "still life: a worn brown overcoat and an old felt hat hanging on a wooden coat rack by the restaurant entrance, no people.",
+   "seed": 101,
+   "text": "Ogni anno, nel giorno dell'anniversario, entrava in incognito, con il suo vecchio cappotto consumato."
+  },
+  {
+   "image_prompt": "the silhouette of an old man in a long overcoat seen from behind, sitting alone at a small corner table, far away, wide shot.",
+   "seed": 101,
+   "text": "Si sedeva sempre allo stesso tavolo, in fondo alla sala."
+  },
+  {
+   "image_prompt": "the silhouette of a man in a sharp suit seen from behind, sitting at a table with two other silhouettes, wine glasses, wide shot.",
+   "seed": 101,
+   "text": "Quella sera, al tavolo accanto, sedeva Leonardo, un imprenditore sicuro di sé, con i suoi investitori."
+  },
+  {
+   "image_prompt": "still life: a gold wristwatch and an expensive fountain pen on a white tablecloth beside a full wine glass, no people.",
+   "seed": 101,
+   "text": "Squadrò l'anziano dall'alto in basso, e sussurrò: questo posto non è per lui."
+  },
+  {
+   "image_prompt": "the silhouette of a man in a sharp suit seen from behind, one arm raised high in the air to call a waiter, wide shot.",
+   "seed": 101,
+   "text": "Schioccò le dita per chiamare il cameriere."
+  },
+  {
+   "image_prompt": "the silhouette of a young waiter in a white jacket seen from behind, walking between tables carrying a glass carafe, wide shot.",
+   "seed": 101,
+   "text": "Arrivò Matteo, il ragazzo più giovane della sala."
+  },
+  {
+   "image_prompt": "still life: an old felt hat resting on a chair next to a quiet corner table with one glass, no people.",
+   "seed": 101,
+   "text": "Ettore, con calma, disse soltanto: io non ho fretta."
+  },
+  {
+   "image_prompt": "still life: a glass carafe tipped over a white tablecloth, a small puddle of water spilling, crystal glass, no people.",
+   "seed": 101,
+   "text": "Poi Matteo, per l'emozione, versò qualche goccia d'acqua."
+  },
+  {
+   "image_prompt": "the silhouette of a man in a sharp suit seen from behind, standing up abruptly, chair knocked back, arm pointing across the room, wide shot.",
+   "seed": 101,
+   "text": "Leonardo scattò in piedi: incompetente! E quel vecchio mendicante lo faccia uscire."
+  },
+  {
+   "image_prompt": "wide view of an elegant dining room from the back, all diners as still dark silhouettes, frozen, chandelier.",
+   "seed": 101,
+   "text": "La sala cadde nel silenzio."
+  },
+  {
+   "image_prompt": "the silhouette of a maitre d' in a tailcoat seen from behind, walking slowly down the aisle of the dining room, wide shot.",
+   "seed": 101,
+   "text": "Allora il direttore attraversò la sala."
+  },
+  {
+   "image_prompt": "the silhouette of a maitre d' in a tailcoat bowing deeply in front of the silhouette of an old man in a long overcoat seated at a corner table, side view, both dark silhouettes against a bright window.",
+   "seed": 101,
+   "text": "Si inchinò davanti a Ettore: bentornato, signore."
+  },
+  {
+   "image_prompt": "an old framed sepia photograph on a restaurant wall showing the restaurant facade on its opening day, close-up, no faces.",
+   "seed": 101,
+   "text": "In sala capirono tutti chi era quell'uomo."
+  },
+  {
+   "image_prompt": "silhouettes of two men seen from behind walking out through the restaurant door into the night, coats on.",
+   "seed": 101,
+   "text": "Gli investitori si alzarono e uscirono: chi tratta così un cameriere, non tratterà meglio noi."
+  },
+  {
+   "image_prompt": "the silhouette of a man in a sharp suit seen from behind, sitting alone at a table with empty chairs and abandoned papers, wide shot.",
+   "seed": 101,
+   "text": "Leonardo rimase solo."
+  },
+  {
+   "image_prompt": "the silhouette of a young waiter in a white jacket leaning down towards the silhouette of an old man in a long overcoat seated at the corner table, side view, both dark silhouettes against a bright window.",
+   "seed": 101,
+   "text": "Matteo chiese a Ettore: perché l'ha fatto?"
+  },
+  {
+   "image_prompt": "still life: two coffee cups facing each other on a white tablecloth, soft evening light, no people.",
+   "seed": 101,
+   "text": "Perché il rispetto si vede quando credi che nessuno conti."
+  },
+  {
+   "image_prompt": "still life: an elegant table setting, silverware perfectly arranged, a single candle, no people.",
+   "seed": 101,
+   "text": "Il galateo non è saper usare le posate."
+  },
+  {
+   "image_prompt": "the silhouette of an old man in a long overcoat and hat seen from behind, walking away down a Paris street at night, warm light from the restaurant door.",
+   "seed": 101,
+   "text": "È come tratti chi non può risponderti."
+  },
+  {
+   "image_prompt": "still life: a black top hat on a white tablecloth beside a folded napkin, centered, no people.",
+   "seed": 101,
+   "text": "Segui le regole del gentleman. Ogni sera, una nuova."
+  }
+ ]
+}
